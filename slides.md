@@ -149,4 +149,8 @@ Temos algumas formas de organizar nossas iformações
 
 ### Hash
 
-![hash](./images/hash.svg){width=75%}
+![hash](./images/hash.png){width=75%}
+
+---
+
+### HyperLogLog
