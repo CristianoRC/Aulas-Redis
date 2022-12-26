@@ -149,4 +149,4 @@ Temos algumas formas de organizar nossas iformações
 
 ### Hash
 
-![hash](./images/hash.png){width=100%}
+![hash](./images/hash-values.png){width=100%}
