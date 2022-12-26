@@ -97,7 +97,25 @@ Temos algumas formas de organizar nossas iformações
 
 ---
 
-### TTL - Tempo de Vida
+#### Verificação de cache de atualização
+
+![string](./images/rotina-validacao.png)
+
+---
+
+#### Aplicação Invalidando o Cache
+
+![string](./images/rotina-invalida.png)
+
+---
+
+#### Expiração por tempo
+
+## ![ttl](./images/ttl.png){width=40%}
+
+---
+
+#### TTL - Tempo de Vida
 
 ![ttl](./images/ttl.png){width=50%}
 
@@ -106,7 +124,6 @@ Temos algumas formas de organizar nossas iformações
 ![ttl](./images/sem-ttl.png)
 
 ---
-
 
 ![ttl](./images/com-ttl.png)
 
