@@ -131,22 +131,22 @@ Temos algumas formas de organizar nossas iformações
 
 ### Lista
 
-![list](./images/list.svg){width=85%}
+![list](./images/lista.png){width=85%}
 
 ---
 
 ### Sets
 
-![set](./images/set.svg){width=85%}
+![set](./images/sets.png){width=85%}
+
+---
+
+### Sorted Sets
+
+![set](./images/SortedSets.png){width=75%}
 
 ---
 
 ### Hash
 
 ![hash](./images/hash.svg){width=75%}
-
----
-
-### Sorted Sets
-
-![set](./images/sorted-set.svg){width=75%}
