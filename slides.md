@@ -93,9 +93,22 @@ Temos algumas formas de organizar nossas iformações
 
 ---
 
-### TTL
+### Invalidar Cache
 
-![ttl](./images/ttl.png){width=55%}
+---
+
+### TTL - Tempo de Vida
+
+![ttl](./images/ttl.png){width=50%}
+
+---
+
+![ttl](./images/sem-ttl.png)
+
+---
+
+
+![ttl](./images/com-ttl.png)
 
 ---
 
