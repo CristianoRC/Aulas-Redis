@@ -111,7 +111,7 @@ Temos algumas formas de organizar nossas iformações
 
 #### Expiração por tempo
 
-## ![ttl](./images/ttl.png){width=40%}
+![ttl](./images/ttl.png){width=40%}
 
 ---
 
@@ -131,26 +131,22 @@ Temos algumas formas de organizar nossas iformações
 
 ### Lista
 
-![list](./images/lista.png){width=85%}
+![list](./images/lista.png){width=100%}
 
 ---
 
 ### Sets
 
-![set](./images/sets.png){width=85%}
+![set](./images/sets.png){width=100%}
 
 ---
 
 ### Sorted Sets
 
-![set](./images/SortedSets.png){width=75%}
+![set](./images/SortedSets.png){width=100%}
 
 ---
 
 ### Hash
 
-![hash](./images/hash.png){width=75%}
-
----
-
-### HyperLogLog
+![hash](./images/hash.png){width=100%}
