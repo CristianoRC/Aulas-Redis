@@ -97,7 +97,7 @@ Temos algumas formas de organizar nossas iformações
 
 ### TTL
 
-![ttl](https://thumbs.dreamstime.com/b/clock-text-time-to-leave-d-rendering-nice-73917426.jpg)
+![ttl](./images/ttl.png){width=55%}
 
 ---
 
