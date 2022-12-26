@@ -39,7 +39,7 @@ Principalmente em sistema de fazem login pro session
 
 ---
 
-### Ainda não conseguimos compartilahr memória entre servidores
+### Ainda não conseguimos compartilhar memória entre servidores
 
 ---
 
@@ -85,6 +85,16 @@ Temos algumas formas de organizar nossas iformações
 
 ### Nome das chaves
 
+`objeto:identificador:campo`
+
+---
+
+### Nome das chaves
+
+`usuer-1001-pdf`
+
+---
+
 ### TTL
 
 ![ttl](https://thumbs.dreamstime.com/b/clock-text-time-to-leave-d-rendering-nice-73917426.jpg)
@@ -112,9 +122,3 @@ Temos algumas formas de organizar nossas iformações
 ### Sorted Sets
 
 ![set](./images/sorted-set.svg){width=75%}
-
----
-
-### Dúvidas?
-
-![alt](https://media3.giphy.com/media/3o6MbudLhIoFwrkTQY/giphy.gif?cid=790b76117789c6161150915091725a365bdeac4e06fd01cd&rid=giphy.gif&ct=g){ width=90% }
