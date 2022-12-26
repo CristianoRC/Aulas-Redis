@@ -7,9 +7,7 @@ enableSearch: false
 enableChalkboard: false
 ---
 
-### Redis
-
-![Cache](https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/Redis_Logo.svg/1200px-Redis_Logo.svg.png){width=60%}
+![Cache](https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/Redis_Logo.svg/1200px-Redis_Logo.svg.png){width=80%}
 
 ---
 
