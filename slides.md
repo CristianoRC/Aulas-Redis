@@ -77,7 +77,7 @@ Temos algumas formas de organizar nossas iformações
 
 ### String
 
-![string](./images/string.svg)
+![string](./images/string.png)
 
 ---
 
@@ -89,7 +89,7 @@ Temos algumas formas de organizar nossas iformações
 
 ### Nome das chaves
 
-`usuer-1001-pdf`
+![string](./images/string-key.png)
 
 ---
 
