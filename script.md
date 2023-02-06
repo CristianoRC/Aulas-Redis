@@ -16,10 +16,34 @@ Podemos guardar dados espaciais(geo), imagens...
 
 ```bash
 set hello world
+set exemplo '{ 	"color": "red", "value": "#f00" }'
+//sobescrever!
+
 get hello
 del hello
+FLUSHALL
+
+keys
+
+exists hello
+type
+
+"Falar sobre JSON"
+"Falar sobre o clear"
+
+
 ```
 
+## Padronizar
+
+```
+RENAME key newkey
+RANDOMKEY
+//Pegar uma random para testar, e nao precisar listar toda, ou verificar se existe alguma
+//FLUSHALL
+//Se não tiver nenhum retorna null
+
+```
 
 
 ## TTL
