@@ -1,4 +1,4 @@
-## Nome das Chaves
+## Tipos das Chaves
 
 string -> Texto
 
@@ -9,8 +9,6 @@ hash -> bom para dados complexos
 Fila -> Sim ele funciona até mesmo como fila
 
 Podemos guardar dados espaciais(geo), imagens...
-
-
 
 ## String
 
@@ -24,6 +22,7 @@ del hello
 FLUSHALL
 
 keys
+keys hel*
 
 exists hello
 type
@@ -31,13 +30,31 @@ type
 "Falar sobre JSON"
 "Falar sobre o clear"
 
-
 ```
 
 ## Padronizar
 
+- Padronizar para não ter duplicidade, e ser fácil de encontrar
+- Dica para padrão: Entidade:identificador:campo/subIndentificador
+
+```
+SET report:1234:pdf http://teste.com/8a5e5a4f-805a
+SET report:1234:csv http://teste.com/12b661e2-9d98
+```
+- Mostrar que a interface segmenta
+- Facilita até mesmo a busca por todas as chaves de um tipo específico
+- Fazer exemplo de busca por tipo específico
+
+```
+keys report:*:*
+keys report:*:csv
+keys report:1234:*
+```
+
+### Ações para renomear
 ```
 RENAME key newkey
+
 RANDOMKEY
 //Pegar uma random para testar, e nao precisar listar toda, ou verificar se existe alguma
 //FLUSHALL
