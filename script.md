@@ -41,6 +41,7 @@ type
 SET report:1234:pdf http://teste.com/8a5e5a4f-805a
 SET report:1234:csv http://teste.com/12b661e2-9d98
 ```
+
 - Mostrar que a interface segmenta
 - Facilita até mesmo a busca por todas as chaves de um tipo específico
 - Fazer exemplo de busca por tipo específico
@@ -51,9 +52,12 @@ keys report:*:csv
 keys report:1234:*
 ```
 
-### Ações para renomear
+### Ações para renomear / Random Key
+
 ```
 RENAME key newkey
+//Exemplo de renomear um renatório de um user para o outro
+RENAME report:1234:csv report:98:csv
 
 RANDOMKEY
 //Pegar uma random para testar, e nao precisar listar toda, ou verificar se existe alguma
@@ -61,7 +65,6 @@ RANDOMKEY
 //Se não tiver nenhum retorna null
 
 ```
-
 
 ## TTL
 
@@ -77,15 +80,13 @@ EXPIRE hello 10  --10s
 
 ## List
 
-````bash
+```bash
 	rpush list-key item
 	rpush list-key item2
 	rpush list-key item
-	
+
 	lpop list-key --Remove item
-````
-
-
+```
 
 ## Sets
 
@@ -97,8 +98,6 @@ sadd set-key item
 
 smembers set-key -- deleta tudo
 ```
-
-
 
 ## Hash
 
