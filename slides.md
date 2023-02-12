@@ -129,6 +129,17 @@ Temos algumas formas de organizar nossas iformações
 
 ---
 
+### Parâmetros do expire
+
+```
+NX -- Set expiry only when the key has no expiry
+XX -- Set expiry only when the key has an existing expiry
+GT -- Set expiry only when the new expiry is greater than current one
+LT -- Set expiry only when the new expiry is less than current one
+```
+
+---
+
 ### Lista
 
 ![list](./images/lista.png){width=100%}
