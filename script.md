@@ -68,6 +68,8 @@ RANDOMKEY
 
 ## TTL
 
+Fazer uma breve revisada sobre o assunto.
+
 ```
 TTL hello
 EXPIRE hello 10  --10s
