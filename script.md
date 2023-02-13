@@ -87,6 +87,21 @@ LT -- Set expiry only when the new expiry is less than current one
 - -2 key não existe
 - **PERSIST** volta ao normal
 
+- SETEX / SETNX
+
+```
+SET report:98:csv exemplo1 EX 30
+
+SET report:98:csv exemplo2 EX 20
+
+SETNX report:98:csv exemplo3
+```
+
+## Strings
+
+- INCR / INCRBY / DECR / DECRBY
+- APPEND / SETRANGE / GETRANGE
+
 ## List
 
 ```bash

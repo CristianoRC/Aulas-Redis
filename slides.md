@@ -140,6 +140,12 @@ LT -- Set expiry only when the new expiry is less than current one
 
 ---
 
+### String
+
+![string](./images/string.png)
+
+---
+
 ### Lista
 
 ![list](./images/lista.png){width=100%}
