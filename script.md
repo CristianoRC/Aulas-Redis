@@ -118,6 +118,18 @@ DECRBY pages:123:views 50
 
 - APPEND / SETRANGE / GETRANGE
 
+```
+APPEND example "Ola"
+APPEND example " Mundo!"
+//Retorna quantidade de characters
+
+SETRANGE example 5 "World!"
+//E se não tiver, como saber o tamanho final?
+STRLEN example
+GETRANGE example 5 11	
+
+```
+
 ## List
 
 ```bash
