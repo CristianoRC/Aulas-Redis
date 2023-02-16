@@ -100,6 +100,22 @@ SETNX report:98:csv exemplo3
 ## Strings
 
 - INCR / INCRBY / DECR / DECRBY
+  Falar sobre poder ser atualziando entre você buscar somar e setar
+  Se não existir, ele cria!
+
+```
+//INCR / INCRBY
+
+SET pages:123:views 0
+INCR pages:123:views
+INCRBY pages:123:views 50
+
+//DECR / DECRBY
+DECR pages:123:views
+DECRBY pages:123:views 50
+
+```
+
 - APPEND / SETRANGE / GETRANGE
 
 ## List
