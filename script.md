@@ -124,7 +124,7 @@ APPEND example " Mundo!"
 //Retorna quantidade de characters
 
 SETRANGE example 5 "World!"
-//E se não tiver, como saber o tamanho final?
+//E se não tiver, como saber o tamanho final?f
 STRLEN example
 GETRANGE example 5 11	
 
@@ -133,12 +133,24 @@ GETRANGE example 5 11
 ## List
 
 ```bash
-	rpush list-key item
-	rpush list-key item2
-	rpush list-key item
+	rpush compras:123:carrinho item
+	rpush compras:123:carrinho item2
+	rpush compras:123:carrinho item
 
-	lpop list-key --Remove item
+	lpush compras:123:carrinho letft-item
+
+	//Se não quiser tem um fim, só colcoar -1 no lugar do 3
+	lrange compras:123:carrinho 0 3
+
+	lpop compras:123:carrinho 0
+	rpop compras:123:carrinho 0
+
+	llen compras:123:carrinho
+
+	//Insere se não existe
+	rpushx compras:123:carrinho item
 ```
+
 
 ## Sets
 
@@ -149,8 +161,14 @@ sadd set-key item3
 sadd set-key item
 
 smembers set-key -- deleta tudo
+
 ```
 
+### Sorted set
+
+ ```
+
+```
 ## Hash
 
 ```bash
