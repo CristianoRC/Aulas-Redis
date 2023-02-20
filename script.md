@@ -92,9 +92,9 @@ LT -- Set expiry only when the new expiry is less than current one
 ```
 SET report:98:csv exemplo1 EX 30
 
-SET report:98:csv exemplo2 EX 20
+SET report:98:csv exemplo2 EX 20 //Com tempo de expiração
 
-SETNX report:98:csv exemplo3
+SETNX report:98:csv exemplo3 //Se nao existir
 ```
 
 ## Strings
@@ -132,23 +132,36 @@ GETRANGE example 5 11
 
 ## List
 
+Muito bom quando você só precisa fazer operações simpels, como adicionar ao remover das pontas
+Serve muito para imitar pilhas e filas, decks...
+
 ```bash
 	rpush compras:123:carrinho item
 	rpush compras:123:carrinho item2
-	rpush compras:123:carrinho item
+	rpush compras:123:carrinho item //falar que da para ter duplicação
 
 	lpush compras:123:carrinho letft-item
+
+	//Adicionando mais de um
+	rpush compras:123:carrinho item1 item2 item3
+
+	//ver todos 
+	lrange compras:123:carrinho 0 -1
 
 	//Se não quiser tem um fim, só colcoar -1 no lugar do 3
 	lrange compras:123:carrinho 0 3
 
-	lpop compras:123:carrinho 0
-	rpop compras:123:carrinho 0
+	lpop compras:123:carrinho //remove o primeiro da lista
+	rpop compras:123:carrinho //remove o ultimo da lista
+	rpop compras:123:carrinho "N" //remove n onjetos da esquerda ou direita
+
+
+	LINDEX compras:123:carrinho 0
+	LINDEX compras:123:carrinho -1 / -2 //Ultimo, penultimo...
 
 	llen compras:123:carrinho
 
-	//Insere se não existe
-	rpushx compras:123:carrinho item
+	ltrim compras:123:carrinho start stop //TODO: Verificar o comportamento do sart stop!
 ```
 
 
