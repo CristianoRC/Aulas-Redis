@@ -156,12 +156,12 @@ Serve muito para imitar pilhas e filas, decks...
 	rpop compras:123:carrinho "N" //remove n onjetos da esquerda ou direita
 
 
+	llen compras:123:carrinho
+
 	LINDEX compras:123:carrinho 0
 	LINDEX compras:123:carrinho -1 / -2 //Ultimo, penultimo...
 
-	llen compras:123:carrinho
-
-	ltrim compras:123:carrinho start stop //TODO: Verificar o comportamento do sart stop!
+	ltrim compras:123:carrinho start stop //mantem apenas o que você colocar na lista o -1 serve aqui também
 ```
 
 
