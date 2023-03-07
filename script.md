@@ -167,13 +167,29 @@ Serve muito para imitar pilhas e filas, decks...
 
 ## Sets
 
-```bash
-sadd set-key item
-sadd set-key item2
-sadd set-key item3
-sadd set-key item
+É um conjunto de dados, e uma de suas grandes diferenças para a lista é que os dados não ficam duplicados.
+E ele é muito mais direto
 
-smembers set-key -- deleta tudo
+```bash
+SADD compras:123:carrinho item
+SADD compras:123:carrinho item2
+SADD compras:123:carrinho item3
+SADD compras:123:carrinho item //nao duplica
+
+SCARD compras:123:carrinho // numero de elemntos
+
+SISMEMBER compras:123:carrinho item //verifica se existe
+SISMEMBER compras:123:carrinho item4
+
+SREM compras:123:carrinho item4 //Deletar
+
+
+//Exemplo de intersecção
+SADD compras:222:carrinho item
+SADD compras:333:carrinho item
+
+SINTER compras:123:carrinho compras:222:carrinho compras:333:carrinho
+
 
 ```
 
