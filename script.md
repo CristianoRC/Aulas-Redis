@@ -176,15 +176,17 @@ SADD compras:123:carrinho item3
 SADD compras:123:carrinho item //nao duplica
 
 SCARD compras:123:carrinho // numero de elemntos
+//listagem final SMEMBERS
 
-//Listagem
+//Listagem - pt.2
 
-SISMEMBER compras:123:carrinho item //verifica se existe
+SISMEMBER compras:123:carrinho item3 //verifica se existe
 SISMEMBER compras:123:carrinho item4
 
-SREM compras:123:carrinho item4 //Deletar
+SREM compras:123:carrinho item3 //Deletar
 
-//Exemplo de intersecção
+
+//Exemplo de intersecção - pt.3
 SADD compras:222:carrinho item
 SADD compras:333:carrinho item
 
@@ -221,15 +223,15 @@ ZRANGE compras:222:carrinho  0 -1 WITHSCORES
 ZRANGEBYSCORE compras:222:carrinho  0 -1
 
 // segunda parte -> Rank
-
 //Saber qual o Rank -> o ultimo é o zero nesse caso -> ASC
-ZRANK compras:222:carrinho item-exemplo-maior
-
-//Incrementando valores
-ZINCRBY compras:222:carrinho 3 item-exemplo-negativo
+ZRANK compras:222:carrinho item-exemplo-negativo
 
 //Saber qual o Rakn -> o com maior rank é o com zero -> Desc
-ZREVRANK compras:222:carrinho item-exemplo-maior
+ZREVRANK compras:222:carrinho item-exemplo-negativo
+
+//Incrementando valores
+ZINCRBY compras:222:carrinho 5 item-exemplo-negativo
+
 
 ```
 
