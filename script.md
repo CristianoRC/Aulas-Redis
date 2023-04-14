@@ -126,7 +126,7 @@ APPEND example " Mundo!"
 SETRANGE example 5 "World!"
 //E se não tiver, como saber o tamanho final?f
 STRLEN example
-GETRANGE example 5 11	
+GETRANGE example 5 11
 
 ```
 
@@ -145,7 +145,7 @@ Serve muito para imitar pilhas e filas, decks...
 	//Adicionando mais de um
 	rpush compras:123:carrinho item1 item2 item3
 
-	//ver todos 
+	//ver todos
 	lrange compras:123:carrinho 0 -1
 
 	//Se não quiser tem um fim, só colcoar -1 no lugar do 3
@@ -164,11 +164,10 @@ Serve muito para imitar pilhas e filas, decks...
 	ltrim compras:123:carrinho start stop //mantem apenas o que você colocar na lista o -1 serve aqui também
 ```
 
-
 ## Sets
 
 É um conjunto de dados, e uma de suas grandes diferenças para a lista é que os dados não ficam duplicados.
-E ele é muito mais direto
+E ele é muito mais direto, sem muitas funcionalidades
 
 ```bash
 SADD compras:123:carrinho item
@@ -178,11 +177,12 @@ SADD compras:123:carrinho item //nao duplica
 
 SCARD compras:123:carrinho // numero de elemntos
 
+//Listagem
+
 SISMEMBER compras:123:carrinho item //verifica se existe
 SISMEMBER compras:123:carrinho item4
 
 SREM compras:123:carrinho item4 //Deletar
-
 
 //Exemplo de intersecção
 SADD compras:222:carrinho item
@@ -190,14 +190,49 @@ SADD compras:333:carrinho item
 
 SINTER compras:123:carrinho compras:222:carrinho compras:333:carrinho
 
-
 ```
 
 ### Sorted set
 
- ```
+Seguimos agora com conjuntos de dados, igual o anterior, onde os dados não duplicam, mas, agora tem um detalhe a mais, esses conjuntos são ordenados, então além do valor, temos também um peso para o regiastro
+
+```bsh
+
+FLUSHALL
+//Vamos na mesma ideia de carrinho, só que agora vamos adicionar a quantidade
+//command chave score valor
+
+ZADD compras:222:carrinho 1 item-exemplo
+ZADD compras:222:carrinho 15 item-exemplo-maior
+ZADD compras:222:carrinho -3 item-exemplo-negativo
+ZADD compras:222:carrinho -3 item-errado
+
+//Listando valores -> -1 pega até o último, assim como os outros comandos
+ZRANGE compras:222:carrinho  0 -1
+
+//Removendo item
+ZREM compras:222:carrinho item-errado
+ZRANGE compras:222:carrinho  0 -1
+
+//Se adicionar Isso no final ele retorna o valor e o SCORE => WITHSCORES
+ZRANGE compras:222:carrinho  0 -1 WITHSCORES
+
+//Também conseguimos listar de forma ordenada por scores => ZRANGEBYSCORE
+ZRANGEBYSCORE compras:222:carrinho  0 -1
+
+// segunda parte -> Rank
+
+//Saber qual o Rank -> o ultimo é o zero nesse caso -> ASC
+ZRANK compras:222:carrinho item-exemplo-maior
+
+//Incrementando valores
+ZINCRBY compras:222:carrinho 3 item-exemplo-negativo
+
+//Saber qual o Rakn -> o com maior rank é o com zero -> Desc
+ZREVRANK compras:222:carrinho item-exemplo-maior
 
 ```
+
 ## Hash
 
 ```bash
