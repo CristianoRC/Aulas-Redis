@@ -61,17 +61,51 @@ The open source, **in-memory data store** used by millions of developers as a da
 
 ---
 
+### Chave valor
+
+---
+
 ### Redis
 
 - Banco de dados Open Sourse
-- In-memory
-- Single Thread
 - NoSQL
 - Chave valor
+- In-memory
+- Single-threaded
+
+---
+
+### Pontos de atenção
+
+Reiniciou, perdeu os dados, até da para fazer armazenamento no disco, mas...
+
+---
+
+### Pontos de atenção
+
+Single-threaded
+
+---
+
+### Pontos de atenção
+
+Cluster Redis
 
 ---
 
 ### Chave valor
+
+![-](./images/chave-valor.png)
+
+---
+
+### Usos
+
+- Distributed Cache
+- Distributed Lock
+- Feature Toggle
+- Sessoes
+- ...
 
 ---
 
