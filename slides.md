@@ -89,7 +89,7 @@ Single-threaded
 
 ### Pontos de atenção
 
-Cluster Redis
+![-](./images/cluster.png){width=65%}
 
 ---
 
