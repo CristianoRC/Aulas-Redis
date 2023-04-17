@@ -63,6 +63,9 @@ The open source, **in-memory data store** used by millions of developers as a da
 
 ### Chave valor
 
+![-](./images/chave-valor.png)
+
+
 ---
 
 ### Redis
@@ -83,19 +86,7 @@ Reiniciou, perdeu os dados, até da para fazer armazenamento no disco, mas...
 
 ### Pontos de atenção
 
-Single-threaded
-
----
-
-### Pontos de atenção
-
 ![-](./images/cluster.png){width=65%}
-
----
-
-### Chave valor
-
-![-](./images/chave-valor.png)
 
 ---
 
