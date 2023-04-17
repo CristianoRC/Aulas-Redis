@@ -61,13 +61,6 @@ The open source, **in-memory data store** used by millions of developers as a da
 
 ---
 
-### Chave valor
-
-![-](./images/chave-valor.png)
-
-
----
-
 ### Redis
 
 - Banco de dados Open Sourse
@@ -75,6 +68,12 @@ The open source, **in-memory data store** used by millions of developers as a da
 - Chave valor
 - In-memory
 - Single-threaded
+
+---
+
+### Chave valor
+
+![-](./images/chave-valor.png)
 
 ---
 
