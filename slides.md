@@ -47,6 +47,30 @@ Principalmente em sistema de fazem login pro session
 
 ---
 
+
+### Invalidar Cache
+
+---
+
+#### Verificação de cache de atualização
+
+![string](./images/rotina-validacao.png)
+
+---
+
+#### Aplicação Invalidando o Cache
+
+![string](./images/rotina-invalida.png)
+
+---
+
+#### Expiração por tempo
+
+![ttl](./images/ttl.png){width=40%}
+
+
+---
+
 ### E o tal do Redis?
 
 ![Redis](https://cdn.iconscout.com/icon/free/png-512/redis-83994.png){width=30%}
@@ -120,28 +144,6 @@ Temos algumas formas de organizar nossas iformações
 ### Nome das chaves
 
 ![string](./images/string-key.png)
-
----
-
-### Invalidar Cache
-
----
-
-#### Verificação de cache de atualização
-
-![string](./images/rotina-validacao.png)
-
----
-
-#### Aplicação Invalidando o Cache
-
-![string](./images/rotina-invalida.png)
-
----
-
-#### Expiração por tempo
-
-![ttl](./images/ttl.png){width=40%}
 
 ---
 
