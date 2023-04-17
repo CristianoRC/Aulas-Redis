@@ -238,10 +238,22 @@ ZINCRBY compras:222:carrinho 5 item-exemplo-negativo
 ## Hash
 
 ```bash
-hset hash-key sub-key1 value1
-hset hash-key sub-key2 value2
-hset hash-key sub-key1 value1
+HSET compras:123:carrinho arroz 10.0
 
-hgetall hash-key
-hdel hash-key sub-key2
+//Existe
+HEXISTS compras:123:carrinho arroz
+
+//Obter apenas um
+HGET compras:123:carrinho arroz
+
+//segunda aula
+
+HSET compras:123:carrinho farinha 12.0
+HSET compras:123:carrinho agua 15.0
+
+//Deletar
+HDEL compras:123:carrinho agua
+
+//Listar todos
+HGETALL compras:123:carrinho
 ```
