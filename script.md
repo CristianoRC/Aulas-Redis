@@ -206,7 +206,7 @@ SINTER compras:123:carrinho compras:222:carrinho compras:333:carrinho
 
 Seguimos agora com conjuntos de dados, igual o anterior, onde os dados não duplicam, mas, agora tem um detalhe a mais, esses conjuntos são ordenados, então além do valor, temos também um peso para o regiastro
 
-```bsh
+```bash
 
 FLUSHALL
 //Vamos na mesma ideia de carrinho, só que agora vamos adicionar a quantidade
