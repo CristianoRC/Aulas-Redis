@@ -47,25 +47,59 @@ Principalmente em sistema de fazem login pro session
 
 ---
 
-### Invalidar Cache
+### Estratégias de escrita Cache
 
 ---
 
-#### Verificação de cache de atualização
+### Pre-caching data
 
-![string](./images/rotina-validacao.png)
-
----
-
-#### Aplicação Invalidando o Cache
-
-![string](./images/rotina-invalida.png)
+![-](./images/pre-caching.png)
 
 ---
 
-#### Expiração por tempo
+### On-demand
 
-![ttl](./images/ttl.png){width=40%}
+---
+
+### Read strategy - Cache Aside
+
+![-](./images/cache-aside.png){width=80%}
+
+---
+
+### Write Strategy - Write Around
+
+![-](./images/write-around.png){width=80%}
+
+---
+
+### Write Strategy - Write Through
+
+![-](./images/write-through.png){width=80%}
+
+---
+
+### Write Strategy - Write Back
+
+![-](./images/write-back.png){width=90%}
+
+---
+
+### Estratégias para invalidar Cache
+
+---
+
+### Verificação programada
+
+---
+
+### Expiração de forma ativa
+
+---
+
+### Expiração por tempo - TTl
+
+![ttl](./images/ttl.png){width=50%}
 
 ---
 
@@ -118,56 +152,6 @@ Reiniciou, perdeu os dados, até da para fazer armazenamento no disco, mas...
 - Feature Toggle
 - Sessoes
 - ...
-
----
-
-### Estratégias de escrita Cache
-
----
-
-### Pre-caching data
-
----
-
-### On-demand
-
----
-
-### Read strategy - Cache Aside
-
----
-
-### Read Strategy - Cache Through
-
----
-
-### Write Strategy - Write Around
-
----
-
-### Write Strategy - Write Back
-
----
-
-### Write Strategy - Write Through
-
----
-
-### Estratégias para invalidar Cache
-
----
-
-### Verificação programada
-
----
-
-### Expiração de forma ativa
-
----
-
-### Expiração por tempo - TTl
-
-![ttl](./images/ttl.png){width=50%}
 
 ---
 
