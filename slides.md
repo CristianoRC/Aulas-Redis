@@ -133,8 +133,27 @@ Reiniciou, perdeu os dados, até da para fazer armazenamento no disco, mas...
 
 ---
 
-### Estratégias para invalidar Cache
+### Read strategy - Cache Aside
 
+---
+
+### Read Strategy - Cache Through
+
+---
+
+### Write Strategy - Write Around
+
+---
+
+### Write Strategy - Write Back
+
+---
+
+### Write Strategy - Write Through
+
+---
+
+### Estratégias para invalidar Cache
 
 ---
 
