@@ -6,6 +6,7 @@
 - É teoricamente um banco de dados NoSQL, existem muitas brigas em relação a isso, mas não importa tanto.
 - E um dos cocneitos mais importantes é que ele armazena todos os dado in-memory
 
+
 ## Tipos das Chaves
 
 string -> Texto

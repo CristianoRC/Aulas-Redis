@@ -47,7 +47,6 @@ Principalmente em sistema de fazem login pro session
 
 ---
 
-
 ### Invalidar Cache
 
 ---
@@ -67,7 +66,6 @@ Principalmente em sistema de fazem login pro session
 #### Expiração por tempo
 
 ![ttl](./images/ttl.png){width=40%}
-
 
 ---
 
@@ -120,6 +118,37 @@ Reiniciou, perdeu os dados, até da para fazer armazenamento no disco, mas...
 - Feature Toggle
 - Sessoes
 - ...
+
+---
+
+### Estratégias de escrita Cache
+
+---
+
+### Pre-caching data
+
+---
+
+### On-demand
+
+---
+
+### Estratégias para invalidar Cache
+
+
+---
+
+### Verificação programada
+
+---
+
+### Expiração de forma ativa
+
+---
+
+### Expiração por tempo - TTl
+
+![ttl](./images/ttl.png){width=50%}
 
 ---
 
