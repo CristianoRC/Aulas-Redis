@@ -91,15 +91,19 @@ Principalmente em sistema de fazem login pro session
 
 ### Verificação programada
 
+![-](./images/agendado.png)
+
 ---
 
 ### Expiração de forma ativa
+
+![-](./images/invalidar-api.png)
 
 ---
 
 ### Expiração por tempo - TTl
 
-![ttl](./images/ttl.png){width=50%}
+![ttl](./images/ttl-base.png)
 
 ---
 
