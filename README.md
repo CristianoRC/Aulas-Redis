@@ -3,6 +3,11 @@ Apresentação e exemplos para os vídeos, palestras e aulas de Redis e cache di
 
 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/Redis_Logo.svg/1200px-Redis_Logo.svg.png" width="350px"></img>
 
+
+## Curso
+
+[Redis e Estratégias Cache Distribuído - Udemy -> Gratuito](https://www.udemy.com/course/redis-estrategias-cache-distribuido/)
+
 ## Slides
 Para uma melhor visualização o ideal é usar a Extensão [Reveal](https://marketplace.visualstudio.com/items?itemName=evilz.vscode-reveal) do Visual Studio Code, mas, você pode ver o conteúdo da apresentação acessando [slides.md](./slides.md).
 
